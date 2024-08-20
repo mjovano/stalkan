@@ -4,8 +4,10 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 export const signUp = async (email, password) => {
   try {
     await createUserWithEmailAndPassword(auth, email, password);
+    window.alert('Signup successful!');
   } catch (error) {
-    console.error("Error signing up:", error);
+    console.error('Error signing up:', error);
+    window.alert(`Signup failed: ${error.message}`);
   }
 };
 
