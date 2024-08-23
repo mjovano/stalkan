@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+
 import { useState } from "react";
+
 import Topbar from "../components/topbar";
 import Side from "../components/side";
-import styles from "../styles/dashboardLayout.module.css";
+import UserAccountInfo from "../components/userAccountInfo";
+
+import styles from "../styles/dashboardLayout.module.scss";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,7 +44,10 @@ export default function RootLayout({
           animate={animate}
           toggleSidebar={toggleSidebar}
         />
-        <main className={styles.MainWrapper}>{children}</main>
+        <main className={styles.MainWrapper}>
+          <UserAccountInfo />
+          <div className={styles.MainContainer}>{children}</div>
+        </main>
       </div>
     </div>
   );

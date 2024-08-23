@@ -1,0 +1,37 @@
+.RootWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.OrdersWrapper {
+  flex: 3;
+  background-color: rgb(199, 127, 127);
+  padding: 1rem;
+}
+
+.ProfileSummaryWrapper {
+  flex: 2;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.ProfileSummaryWrapper h4 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.HelthStatusContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.HealthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
